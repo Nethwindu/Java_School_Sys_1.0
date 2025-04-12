@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students</title>
+</head>
+<body>
+    <h1>Student Info</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td th:text = "${student.studenId}"></td>
+            <td th:text = "${student.name}"></td>
+            <td th:text = "${student.email}"></td>
+            <td th:text = "${student.address}"></td>
+        </tr>
+    </table>
+</body>
+</html>
