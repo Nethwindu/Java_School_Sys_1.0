@@ -17,7 +17,8 @@ public class StudentWebController {
 
     @RequestMapping("/students")
     public String getStudents(Model model) {
-        return "student.stu";
+        model.addAttribute("students", studentService.getStudentList());
+        return "students";
     }
 
 }
