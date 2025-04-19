@@ -16,8 +16,8 @@
             <th>Email</th>
             <th>Location</th>
         </tr>
-        <tr>
-            <td th:text = "${student.studenId}"></td>
+        <tr th:each="student : ${students}">
+            <td th:text = "${student.studentId}"></td>
             <td th:text = "${student.name}"></td>
             <td th:text = "${student.email}"></td>
             <td th:text = "${student.address}"></td>
